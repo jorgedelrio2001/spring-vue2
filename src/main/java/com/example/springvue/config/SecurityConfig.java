@@ -11,7 +11,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-
+//IF you want to add a new page to the website, add a ".antMatchers("/page_name/**").permitAll()"
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -23,6 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/css/**").permitAll()
                 .antMatchers("/login/**").permitAll()
                 .antMatchers("/example-page/**").permitAll() // allow any user to view any route with /example-page prefixed to it
+                .antMatchers("/video-page/**").permitAll()
                 .antMatchers("/unauthorized").permitAll()
                 .anyRequest().authenticated()
                 .and()
