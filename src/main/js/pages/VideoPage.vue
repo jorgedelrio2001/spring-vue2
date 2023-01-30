@@ -8,7 +8,7 @@
   </section>-->
 </template>
 <!--YOU can't add IFRAMES to .vue files-->
-<!-- export default just means that you want this page to be exported and usable by other files"
+<!-- export default just means that you want this page to be exported and usable by other files"-->
 <script>
 export default {
   name: "VideoPage"
