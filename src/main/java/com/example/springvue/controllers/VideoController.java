@@ -13,6 +13,6 @@ public class VideoController {
 
     @GetMapping("/video-page")
     public String index(HttpServletRequest request) {
-        return "video";
+        return "index";
     }
  }
