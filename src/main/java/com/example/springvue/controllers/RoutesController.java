@@ -2,7 +2,6 @@ package com.example.springvue.controllers;
 
 import com.google.gson.JsonObject;
 import org.springframework.boot.web.servlet.error.ErrorController;
-import org.springframework.context.annotation.Scope;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.WebAttributes;
 import org.springframework.stereotype.Controller;
@@ -14,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Controller
-@Scope("request")
 public class RoutesController implements ErrorController {
     private static final String PATH = "/error";
 
