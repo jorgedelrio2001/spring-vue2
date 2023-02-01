@@ -1,6 +1,12 @@
 <template>
+  <div id="main">
   <div>
     <h1>Welcome to the Video Page!</h1>
+  </div>
+  <section class="vidholder">
+    <iframe class="video" src=https://vimeo.com/event/2362252/embed allow="autoplay;" allowfullscreen></iframe>
+    <iframe class ="chat" src=https://vimeo.com/event/2362252/chat/ height="100%" frameborder="0"></iframe>
+  </section>
   </div>
   <!--<section>
 
@@ -16,5 +22,31 @@ export default {
 </script>
 
 <style scoped>
+main{
 
+  height:1vh;
+  width:1vw;
+
+}
+h1{
+  color:chartreuse;
+}
+.vidholder{
+  background:red;
+  width:1000px;
+  height:500px;
+  display:flex;
+  flex-flow:row nowrap;
+
+}
+vidholder *{
+
+  height:100%;
+}
+.video{
+  width:70%;
+}
+.chat{
+  width:30%;
+}
 </style>
