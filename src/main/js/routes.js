@@ -1,7 +1,13 @@
-import VideoPage from "./pages/VideoPage.vue";
+
 
 const ExamplePage = () => import(/* webpackChunkName: "example" */ './pages/ExamplePage.vue');
-//const VideoPage=()=>import('./pages/VideoPage.vue');
+const VideoPage=()=>import('./pages/VideoPage.vue');
+//make a const with the name of ur vue file
+//you'll need it further down this file
+
+    // import VideoPage from "./pages/VideoPage.vue";   <--- This also works, I'm wondering if const is safer?
+
+
 export default [
     {
         name: 'ExamplePage',
@@ -19,6 +25,6 @@ export default [
 //just add a comma "," and then make an object {} with 3 attributes, "name, path & component" name will be the
 // "Export" name of ur view file
 //path is the path you set up in your controller, which will bne the same as the path you set up in Security config
-//component should be the name of your static page template in *templates*
+//component will be the name of the import you made earlier
 
 
