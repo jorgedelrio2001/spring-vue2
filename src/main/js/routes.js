@@ -1,5 +1,6 @@
 const ExamplePage = () => import(/* webpackChunkName: "example" */ './pages/ExamplePage.vue');
 import LandingPage from "./pages/LandingPage.vue";
+const JeremiahPage = () => import(/* webpackChunkName: "example" */ './pages/JeremiahPage.vue');
 
 export default [
     {
@@ -11,5 +12,10 @@ export default [
         name:'LandingPage',
         path:'/welcome',
         component:LandingPage,
+    },
+    {
+        name: 'JeremiahPage',
+        path: '/jeremiah-page',
+        component: JeremiahPage,
     },
 ];
