@@ -25,7 +25,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/example-page/**").permitAll() // allow any user to view any route with /example-page prefixed to it
                 .antMatchers("/welcome/**").permitAll()
                 .antMatchers("/unauthorized").permitAll()
-                .antMatchers(("/jeremiah-page")).permitAll()
+                .antMatchers(("/admin")).permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()

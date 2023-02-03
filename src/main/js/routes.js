@@ -15,7 +15,7 @@ export default [
     },
     {
         name: 'JeremiahPage',
-        path: '/jeremiah-page',
+        path: '/admin',
         component: JeremiahPage,
     },
 ];
