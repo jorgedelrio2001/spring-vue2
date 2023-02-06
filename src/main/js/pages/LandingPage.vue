@@ -6,8 +6,8 @@
         <input type="text" id="username" name="username" placeholder="Passcode">
 
         <br>
-        <input type="submit" value="View Stream">
-        <button>Log in as admin</button>
+        <input type="submit" value="View Stream" @click="goToHomePage">
+        <button @click="goToAdminLogin">Log in as admin</button>
     </div>
 </div>
 </div>
@@ -15,7 +15,15 @@
 
 <script>
 export default {
-  name: "LandingPage"
+  name: "LandingPage",
+  methods: {
+    goToHomePage() {
+      this.$router.push('/stream')
+    },
+    goToAdminLogin(){
+      this.$router.push('/admin-login')
+    }
+  }
 }
 </script>
 
