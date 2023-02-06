@@ -16,4 +16,14 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping("/welcome")
+    public String welcome(HttpServletRequest request) {
+        return "form";
+    }
+
+    @GetMapping("/admin-login")
+    public String adminLogin(HttpServletRequest request) {
+        return "form";
+    }
+
 }

@@ -1,5 +1,5 @@
 const ExamplePage = () => import(/* webpackChunkName: "example" */ './pages/ExamplePage.vue');
-import LandingPage from "./pages/LandingPage.vue";
+import LandingPage from './pages/LandingPage.vue';
 const JeremiahPage = () => import(/* webpackChunkName: "example" */ './pages/JeremiahPage.vue');
 const VideoPage=()=>import('./pages/VideoPage.vue');
 const AdminLogin = () => import(/* webpackChunkName: "admin" */ './pages/AdminLogin.vue');
@@ -24,7 +24,7 @@ export default [
     },
     {
         name:'VideoPage',
-        path:'/video-page',
+        path:'/stream',
         component:VideoPage,
     },
     {
