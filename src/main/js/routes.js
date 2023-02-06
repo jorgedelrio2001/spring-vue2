@@ -1,13 +1,9 @@
-
-
 const ExamplePage = () => import(/* webpackChunkName: "example" */ './pages/ExamplePage.vue');
 import LandingPage from "./pages/LandingPage.vue";
 const JeremiahPage = () => import(/* webpackChunkName: "example" */ './pages/JeremiahPage.vue');
 const VideoPage=()=>import('./pages/VideoPage.vue');
-//make a const with the name of ur vue file
-//you'll need it further down this file
+const AdminLogin = () => import(/* webpackChunkName: "admin" */ './pages/AdminLogin.vue');
 
-    // import VideoPage from "./pages/VideoPage.vue";   <--- This also works, I'm wondering if const is safer?
 
 
 export default [
@@ -30,6 +26,11 @@ export default [
         name:'VideoPage',
         path:'/video-page',
         component:VideoPage,
+    },
+    {
+        name:'AdminLogin',
+        path: '/admin-login',
+        component: AdminLogin,
     },
 ];
 //In addition to the config stuff *see config/SecurityConfig* You need to add your vue page to the routes.js file

@@ -27,6 +27,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/video-page/**").permitAll()
                 .antMatchers("/unauthorized").permitAll()
                 .antMatchers(("/admin")).permitAll()
+                .antMatchers("/admin-login/**").permitAll() // allow any user to view any route with /admin-login prefixed to it
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
