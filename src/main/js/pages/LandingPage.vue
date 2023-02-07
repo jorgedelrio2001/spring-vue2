@@ -10,7 +10,6 @@
         <button @click="goToAdminLogin">Log in as admin</button>
     </div>
 </div>
-</div>
 </template>
 
 <script>
