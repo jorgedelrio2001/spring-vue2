@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class = "form">
-        <h1>Encore (working title:)</h1>
+        <h1>Encore (working title)</h1>
         <h3>Enter Passcode</h3>
         <input type="text" id="username" name="username" placeholder="Passcode">
 
