@@ -16,9 +16,17 @@
 <!--YOU can't add IFRAMES to .vue files-->
 <!-- export default just means that you want this page to be exported and usable by other files"-->
 <script>
+import {db} from "../app";
+
 export default {
   name: "VideoPage"
 }
+db.collection("stuff").add({
+  "nepal":{
+    "flag":"triangular",
+    "sky": "blue"
+  }
+}).then(data=>console.log(data))
 </script>
 
 <style scoped>

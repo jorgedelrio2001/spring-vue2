@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
-@RestController
+//@RestController
 @Scope("singleton")
 /*@RequestMapping() REQUEST MAPPING allows you to change your root directory name from being plain "/"
  without interfering with the other settings*/

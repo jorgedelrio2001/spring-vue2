@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 
 
 @Controller
-@Scope("request")
+
 public class HomeController {
 
     @GetMapping("/example-page")

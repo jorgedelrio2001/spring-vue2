@@ -26,12 +26,7 @@ const firebaseConfig = {
 const base=initializeApp(firebaseConfig);
 
 export const db = base.firestore();
-db.collection("stuff").add({
-    "nepal":{
-        "flag":"triangular",
-        "sky": "blue"
-    }
-}).then(data=>console.log(data))
+
 
 
 
