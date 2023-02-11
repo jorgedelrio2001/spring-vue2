@@ -4,7 +4,7 @@ import axios from 'axios';
 import App from './components/App.vue';
 import routes from './routes';
 import store from './store';
-
+import "./fireclient";
 
 
 Vue.use(VueRouter);

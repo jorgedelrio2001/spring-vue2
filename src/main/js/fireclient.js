@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-
+import "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -16,8 +16,17 @@ const firebaseConfig = {
     measurementId: "G-P3VXXSRQXZ"
 };
 
-const base=initializeApp(firebaseConfig);
 
-export const db = base.firestore();
+const firebaseApp=initializeApp(firebaseConfig);
+const authoritah=firebaseApp.auth();
+authoritah.onAuthStateChanged( user=>{
+    if(user != null){
+        console.log('logged in!')
+    }
+    else{
+        console.log('No user :(')
+    }
+})
+//export const db = base.firestore();
 //^^^^Okay, so This code doesn't crash, but when I put it in app.js, pages don't load ::: So basically a soft crash
 //im going to look further into how to use this thing
