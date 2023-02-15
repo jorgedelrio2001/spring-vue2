@@ -8,11 +8,12 @@ import javax.servlet.http.HttpServletRequest;
 
 
 @Controller
-@Scope("request")
+
 public class HomeController {
 
     @GetMapping("/example-page")
     public String index(HttpServletRequest request) {
+        //System.out.print("pumpernickle");
         return "index";
     }
 
