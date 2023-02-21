@@ -16,6 +16,7 @@ public class FirebaseController {
         this.firebaseService = firebaseService;
     }
 
+    //Not properly allocated since not all components are set yet
     @GetMapping("/data")
     public ResponseEntity<?> getAllData() {
         DatabaseReference ref = firebaseService.getDatabase().getReference("data");

@@ -7,6 +7,7 @@ import java.io.*;
 public class FirebaseConfig {
 
     @Bean
+    //Not properly allocated since not all components are set yet
     public FirebaseApp firebaseApp() throws IOException {
         FileInputStream serviceAccount = new FileInputStream("path/to/firebase-adminsdk.json");
 
