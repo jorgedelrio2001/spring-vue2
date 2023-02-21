@@ -50,6 +50,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-admin:7.2.0'
     implementation 'org.springframework.boot:spring-boot-starter-cache'
     implementation 'org.springframework.boot:spring-boot-starter-freemarker'
     implementation 'org.springframework.security:spring-security-messaging'

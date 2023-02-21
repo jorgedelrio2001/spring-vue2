@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import "firebase/auth";
 import "firebase/firebase-firestore"
 
-// TODO: Add SDKs for Firebase products that you want to use
+// TODO: Add SDKs    for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
@@ -23,6 +23,8 @@ const firebaseConfig = {
 const firebaseApp=initializeApp(firebaseConfig);
 const authoritah=firebaseApp.auth();
 const firestore=firebaseApp.firestore();
+
+//firestore.collection('funeral homes').get()
 
 //authoritah.createUserWithEmailAndPassword("creativedan2@gmail.com","uber");
 /*firestore.collection('funeral homes').doc('FH').update('fhname','epic funeral home')
@@ -56,6 +58,7 @@ authoritah.onAuthStateChanged( user=>{
     }
 })
 
+export const logOut=authoritah.signOut()
 
 //export const db = base.firestore();
 //^^^^The code will give us a bit of hope that firebase won't be a pain in the neck any longer

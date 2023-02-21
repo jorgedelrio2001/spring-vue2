@@ -4,7 +4,7 @@ import axios from 'axios';
 import App from './components/App.vue';
 import routes from './routes';
 import store from './store';
-import "./fireclient";
+import {logOut} from "./fireclient";
 
 
 Vue.use(VueRouter);
@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new Vue({
         router,
         store,
+        logOut,
         render: (h) => h(App),
     }).$mount('#app');
 });
