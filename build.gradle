@@ -9,10 +9,10 @@ buildscript {
         }
     }
     //Firebase Realtime Database
-    dependencies {
+   /* dependencies {
         implementation 'com.google.firebase:firebase-admin:8.0.0'
         implementation 'com.google.cloud:google-cloud-firestore:1.41.1'
-    }
+    }*/
 
 
     dependencies {
