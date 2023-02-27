@@ -29,13 +29,13 @@ const firestore=firebaseApp.firestore();
 //authoritah.createUserWithEmailAndPassword("creativedan2@gmail.com","uber");
 /*firestore.collection('funeral homes').doc('FH').update('fhname','epic funeral home')
 firestore.collectionGroup('funeral homes ' )*/
-
+/*
 authoritah.signInWithEmailAndPassword(
     "creativedan2@gmail.com","superepicawesomecool"
 )
     .then((userCreds)=>{console.log("Hello bud")})
     .catch();
-
+*/
 /*authoritah.createUserWithEmailAndPassword("creativedan2@gmail.com","superepicawesomecool")
     .then((userCredential) => {
         // Signed in
@@ -48,7 +48,7 @@ authoritah.signInWithEmailAndPassword(
         const errorMessage = error.message;
         // ..
     });*/
-
+/*
 authoritah.onAuthStateChanged( user=>{
     if(user != null){
         console.log('logged in!')
@@ -59,7 +59,7 @@ authoritah.onAuthStateChanged( user=>{
 })
 
 export const logOut=authoritah.signOut()
-
+*/
 //export const db = base.firestore();
 //^^^^The code will give us a bit of hope that firebase won't be a pain in the neck any longer
 //DB set-up should be easy
