@@ -32,10 +32,14 @@ export default [
         path: '/admin-login',
         component: AdminLogin,
     },
-    ,{
+    {
         name:'Vidcheck',
         path:'/vidcheck'
-    }
+    },
+   /* {
+        name:'ApiHouse',
+        path:"/api"
+    }*/
 ];
 //In addition to the config stuff *see config/SecurityConfig* You need to add your vue page to the routes.js file
 //just add a comma "," and then make an object {} with 3 attributes, "name, path & component" name will be the

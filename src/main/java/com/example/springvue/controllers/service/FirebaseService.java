@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 public class FirebaseService {
 
     //Not properly allocated since not all components are set yet
-    private final FirebaseDatabase database;
+    //private final FirebaseDatabase database;
 
-    public FirebaseService(FirebaseApp firebaseApp) {
+    /*public FirebaseService(FirebaseApp firebaseApp) {
         this.database = FirebaseDatabase.getInstance(firebaseApp);
-    }
+    }*/
 
     public FirebaseDatabase getDatabase() {
         //nothing here yet, so I just returned null so that the code doesn't break in compile time

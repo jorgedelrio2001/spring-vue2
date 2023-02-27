@@ -14,6 +14,7 @@
 </template>
 
 <script>
+fetch("./api")
 export default {
   name: "AdminLogin"
 }

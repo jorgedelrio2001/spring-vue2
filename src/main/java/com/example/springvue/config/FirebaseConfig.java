@@ -6,10 +6,10 @@ import com.google.firebase.FirebaseOptions;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import java.io.*;
-@Configuration
+//@Configuration
 public class FirebaseConfig {
+/*
 
-    @Bean
     //Not properly allocated since not all components are set yet
     public FirebaseApp firebaseApp() throws IOException {
         FileInputStream serviceAccount = new FileInputStream("path/to/firebase-adminsdk.json");
@@ -20,4 +20,5 @@ public class FirebaseConfig {
 
         return FirebaseApp.initializeApp(options);
     }
+ */
 }
