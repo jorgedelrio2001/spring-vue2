@@ -1,2 +1,3 @@
-package com.example.springvue;public class FirebaseRealtimeDatabaseTest {
+package com.example.springvue;
+public class FirebaseRealtimeDatabaseTest {
 }
