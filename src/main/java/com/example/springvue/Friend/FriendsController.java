@@ -31,17 +31,20 @@ public class FriendsController {
                 ).findAny().orElse(null);
 
     }
+    */
     @DeleteMapping("/{id}")
     public String deleteFriend(@PathVariable String id){
-        if(friends.removeIf(friend->id.equals(friend.getId()))) {
+        if(friendService.removeFriend(id)) {
             return "[Result: Delete Successful!]";
         }
         return"[Result:Delete Failed]";
-    }*/
+    }
     @PostMapping()
     public String addFriend(@RequestBody Friend friend) {
-        friendService.addFriend(friend);
-        return "Event Successful";
+        if(friendService.addFriend(friend)) {
+            return "Event Successful";
+        }
+        return "Event Failed";
     }
 
 }

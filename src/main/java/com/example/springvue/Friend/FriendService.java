@@ -9,7 +9,7 @@ import java.util.List;
 public class FriendService {
     private List<Friend>friends;
     public FriendService(){
-        friends=new ArrayList<Friend>();
+        friends=new ArrayList<>();
         friends.add(new Friend("super","Epicman"));
         friends.add(new Friend("staunch","McStaunchy"));
         friends.add(new Friend("83124","Shelby"));
@@ -21,6 +21,10 @@ public class FriendService {
     public boolean addFriend(Friend friend){
         friends.add(friend);
         return true;
+    }
+    public boolean removeFriend(String id){
+        return friends.removeIf(friend->id.equals(friend.getId()));
+
     }
 }
 
