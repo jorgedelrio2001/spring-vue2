@@ -25,6 +25,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/**").permitAll()
                 .antMatchers("/api/**").permitAll()
                 .antMatchers("/example-page/**").permitAll() // allow any user to view any route with /example-page prefixed to it
+                .antMatchers("/rest/**").permitAll() // allow any user to view any route with /rest prefixed to it (we would want to implement security around this)
                 .antMatchers("/welcome/**").permitAll()
                 .antMatchers("/stream/**").permitAll()
                 .antMatchers("/unauthorized").permitAll()
