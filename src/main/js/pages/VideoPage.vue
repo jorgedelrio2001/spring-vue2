@@ -18,7 +18,7 @@
 <!-- export default just means that you want this page to be exported and usable by other files"-->
 <script>
 
-import {logOut} from "../fireclient";
+//import {logOut} from "../fireclient";
 export default {
 
   name: "VideoPage",

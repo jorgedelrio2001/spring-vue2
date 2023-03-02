@@ -5,7 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(catalog = "test_schema", name = "users", schema = "test_schema")
+@Table(catalog = "livestream", name = "users", schema = "livestream")
 @GenericGenerator(name = "uuid", strategy = "uuid2")
 public class User {
 
