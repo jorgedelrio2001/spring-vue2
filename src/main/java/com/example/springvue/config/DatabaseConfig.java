@@ -15,7 +15,7 @@ public class DatabaseConfig {
 
     /*
     Steps to add data source:
-    1) Added spring-boot-starter-data-jpa (database resources), spring-boot-starter-data-rest (REST resources), and mysql:mysql-connector-java (runtime connector for the mysql database driver)
+    1) Ad   ded spring-boot-starter-data-jpa (database resources), spring-boot-starter-data-rest (REST resources), and mysql:mysql-connector-java (runtime connector for the mysql database driver)
     dependencies to the build.gradle file (refresh gradle project afterwards)
     2) Added datasource properties to the applications.properties file
     3) Created this class, DatabaseConfig.java, which instantiates configuration beans based on the active spring profile
