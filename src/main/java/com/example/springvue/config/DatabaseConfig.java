@@ -27,21 +27,22 @@ public class DatabaseConfig {
     // These spring beans will be instantiated when the spring.profiles.active is set to prd
     @Bean
     @Primary
-    @Profile("prd")
+    @Profile("prd") //I don't personally know the syntax, but I'm assuming this draws from application.properties
+                    //Specifically the environmental variables that involve prd
     public DataSource productionDataSource() {
         return this.productionDataSourceProperties().initializeDataSourceBuilder().type(HikariDataSource.class).build();
     }
 
     @Bean
     @Primary
-    @ConfigurationProperties("spring.datasource.prd")
+    @ConfigurationProperties("spring.datasource.prd")//This must also involve itself with production mode: I might be more accurate on this one
     public DataSourceProperties productionDataSourceProperties() {
         return new DataSourceProperties();
     }
 
     // These spring beans will be instantiated when the spring.profiles.active is set to tst (running a local data source for now)
     @Bean
-    @Profile("tst")
+    @Profile("tst")//unsure what "tst" represents
     public DataSource localDataSource() {
         return this.localDataSourceProperties().initializeDataSourceBuilder().type(HikariDataSource.class).build();
     }
