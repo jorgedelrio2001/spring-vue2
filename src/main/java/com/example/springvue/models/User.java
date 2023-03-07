@@ -10,8 +10,8 @@ import javax.persistence.*;
 public class User {
 
     @Id
-    @GeneratedValue(generator = "uuid")
-    @Column(name = "user_uuid", length = 36, unique = true, nullable = false)
+    @GeneratedValue(generator = "uuid") //maybe some form of sequence
+    @Column(name = "user_uuid", length = 36, unique = true, nullable = false)// Column is Mysql Specific according to internet
     private String userUuid;
 
     @Column(name = "first_name", length = 200)

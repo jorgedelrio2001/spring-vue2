@@ -10,12 +10,15 @@ import java.util.List;
 public class FriendsController {
 
     private final FriendService friendService;
+
+
     @Autowired
     public FriendsController(FriendService friendService){
         this.friendService = friendService;
         //friends=new ArrayList<>();
 
     }
+
 
     @GetMapping()
     public List<Friend> list(){
