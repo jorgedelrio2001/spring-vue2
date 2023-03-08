@@ -7,19 +7,19 @@ import java.util.List;
 
 @Service
 public class FuneralHomeService {
-    private final FuneralHomeRepository fhr;
+    private final FuneralHomeRepository funeralHomeRepository;
     @Autowired
-    public FuneralHomeService(FuneralHomeRepository fhr){
-            this.fhr=fhr;
+    public FuneralHomeService(FuneralHomeRepository funeralHomeRepository){
+
+        this.funeralHomeRepository=funeralHomeRepository;
     }
 
     public List<FuneralHome> listHomes(){
 
-        return fhr.findAll();
+        return funeralHomeRepository.findAll();
     }
-    public boolean addHome(FuneralHome f){
+    public void addHome(FuneralHome f){
         System.out.print(f);
-        return true;
     }
 
 }

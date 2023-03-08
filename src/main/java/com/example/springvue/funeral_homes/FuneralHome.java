@@ -4,7 +4,6 @@ import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 
 //table, ID and Entity all come from javax.persistence
 @Entity
@@ -18,22 +17,19 @@ public class FuneralHome {
     @Id
     @GeneratedValue(generator = "funeral_home_ids")
     @Column(name = "funeral_home_id", unique = true, nullable = false)
-    private Long id;//guys should we use int or BIGINT in mysql?
-    @Column(name="code",length=80)
-    private String code;
-    @Column(name="vimeo_id",length=80)
-    private String vimeo_id;
-    @Column(name="path_to_saved_recording",length=80)
-    private String path_to_saved_recording;
-    @Column(name="start_timestamp",length=80)
-    private Timestamp start_timestamp;
+    private Long funeralHomeId;//guys should we use int or BIGINT in mysql?
+    @Column(name="intro_video",length=480)
+    private String intro_video;
+    @Column(name="outro_video",length=480)
+    private String outro_video;
+    @Column(name="name",length=160)
+    private String name;
 
 
-    public FuneralHome(String code,String vimeo_id, String path_to_saved_recording,Timestamp start_timestamp){
-        this.code=code;
-        this.vimeo_id=vimeo_id;
-        this.path_to_saved_recording=path_to_saved_recording;
-        this.start_timestamp=start_timestamp;
+    public FuneralHome( String name, String intro_video,String outro_video){
+        this.name=name;
+        this.intro_video=intro_video;
+        this.outro_video=outro_video;
     }
 
 }
