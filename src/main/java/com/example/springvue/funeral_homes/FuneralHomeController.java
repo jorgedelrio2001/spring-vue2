@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/funeral_homes")
@@ -17,8 +18,26 @@ public class FuneralHomeController {
     public List<FuneralHome> listFuneralHomes(){
         return funeralHomeService.listHomes();
     }
-    @PostMapping
-    public void addFuneralHome(@RequestBody FuneralHome newcomer){
-        funeralHomeService.addHome(newcomer);
+    @GetMapping("/{id}")
+    public Optional<FuneralHome> specifyFuneralHome(@PathVariable Long id){
+        return funeralHomeService.listHomesByID(id);
     }
+    /*@GetMapping("/{name}")
+    public Optional<FuneralHome> findFuneralHomeByName(@PathVariable String name){
+        return funeralHomeService.listHomesByName(name);
+    }*/
+    @PostMapping
+    public String addFuneralHome(@RequestBody FuneralHome newcomer){
+        funeralHomeService.listHomes().stream().anyMatch(funeralHome -> funeralHome.equals(newcomer));
+        funeralHomeService.addHome(newcomer);
+        return "{'response':'request succesful'}";
+    }
+
+    @DeleteMapping()
+    public void removeFuneralHome(@RequestBody Long id){
+         funeralHomeService.removeHomeByID(id);
+    }//I'm averse to removing the funeral home by Name > what say you all?
+
+
 }
+
