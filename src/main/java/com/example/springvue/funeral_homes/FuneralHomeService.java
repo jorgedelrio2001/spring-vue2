@@ -31,7 +31,7 @@ public class FuneralHomeService {
         funeralHomeRepository.deleteById(id);
     }
 
-   /* public Optional<FuneralHome> listHomesByName(String name) {
-        return funeralHomeRepository.findOne();
-    }*/
+    public Optional<FuneralHome> listHomesByName(String name) {
+        return funeralHomeRepository.findFuneralHomeByName(name);
+    }
 }

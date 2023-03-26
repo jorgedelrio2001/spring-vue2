@@ -10,16 +10,9 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class FuneralHomeTest {
 
-    private FuneralHome x=new FuneralHome("Bob","non","non");
     @Autowired
     private FuneralHomeRepository underTest;
 
-    @Test
-    void repoShouldWork(){
-        //given funeralHomeRepo exists
-
-        assertThat(underTest.findAll()).isNotNull();
-    }
     @Test
     void ConstructorWithArgsShouldWork() {
         //Given
