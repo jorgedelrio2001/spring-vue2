@@ -14,6 +14,7 @@ public class FuneralHome {
     public FuneralHome(){
 
     }
+    //the column names are glowing red for no reason, please ignore
     @Id
     @GeneratedValue(generator = "funeral_home_ids")
     @Column(name = "funeral_home_id", unique = true, nullable = false)
