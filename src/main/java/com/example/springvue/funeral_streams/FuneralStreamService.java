@@ -1,4 +1,4 @@
-package com.example.springvue.funeral_homes.stream;
+package com.example.springvue.funeral_streams;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

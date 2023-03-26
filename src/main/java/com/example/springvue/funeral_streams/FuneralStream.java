@@ -1,4 +1,4 @@
-package com.example.springvue.funeral_homes.stream;
+package com.example.springvue.funeral_streams;
 
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
