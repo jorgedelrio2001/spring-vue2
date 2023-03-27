@@ -64,9 +64,9 @@ public class FuneralStream {
      */
     public FuneralStream(String code, String vimeo_id, long funeralHomeID, Timestamp startTimeStamp){
         this(code, vimeo_id, funeralHomeID);
-
         this.startTimestamp=startTimeStamp;
     }
+
 
         //My reason for making timestamp separate is to make the constructor shorter
     //We'll add security to this in the controller
