@@ -1,10 +1,10 @@
-package com.example.springvue.funeral_homes;
+package com.example.springvue.funeral_homeTester;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import java.util.Optional;
 /* I looked up "Paging and Sorting Repository" and it seems that JPA Repository
   everything PagingAndSortingRepository does plus CrudRepository functions */
 
@@ -12,5 +12,6 @@ import java.util.List;
 @Repository
 public interface FuneralHomeRepository extends JpaRepository<FuneralHome, Long> {
     //the two generics represent the Class we're storing and the DataType of its ID
-
+    Optional<FuneralHome> findFuneralHomeByName(String name); // Just by adding this in,
+    // I can now query funeralHomes By name!
 }

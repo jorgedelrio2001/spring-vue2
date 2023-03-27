@@ -10,6 +10,7 @@ public class SpringVueApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringVueApplication.class, args);
+
     }
 
     /*
