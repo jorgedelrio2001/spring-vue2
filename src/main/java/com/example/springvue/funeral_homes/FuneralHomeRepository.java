@@ -1,4 +1,4 @@
-package com.example.springvue.funeral_homeTester;
+package com.example.springvue.funeral_homes;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;

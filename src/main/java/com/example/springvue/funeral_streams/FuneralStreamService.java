@@ -2,12 +2,11 @@ package com.example.springvue.funeral_streams;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PutMapping;
 
-import java.util.InputMismatchException;
+import java.sql.Timestamp;
 import java.util.List;
 import java.util.Optional;
-import java.util.regex.Pattern;
 
 @Service
 public class FuneralStreamService {
@@ -41,14 +40,16 @@ public class FuneralStreamService {
      * @param timeString
      * @return
      */
-    @PutMapping("/setStreamTime")
+
     public boolean setTimeOfFuneral(long streamID, String timeString){
+        try {
+            funeralStreamRepository.changeStreamStartTime(streamID, Timestamp.valueOf(timeString));
+        }catch(IllegalArgumentException illegalArgumentException){
+            return false;
+        }
+        return true;
 
 
-
-
-
-        return false;
     }
 
 
