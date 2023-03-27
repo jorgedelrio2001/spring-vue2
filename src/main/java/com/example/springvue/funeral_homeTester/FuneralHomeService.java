@@ -1,4 +1,4 @@
-package com.example.springvue.funeral_homes;
+package com.example.springvue.funeral_homeTester;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

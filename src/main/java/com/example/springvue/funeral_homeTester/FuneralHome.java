@@ -1,4 +1,4 @@
-package com.example.springvue.funeral_homes;
+package com.example.springvue.funeral_homeTester;
 
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;

@@ -1,10 +1,9 @@
-package com.example.springvue.funeral_homes;
+package com.example.springvue.funeral_homeTester;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 import java.util.Optional;
 /* I looked up "Paging and Sorting Repository" and it seems that JPA Repository
   everything PagingAndSortingRepository does plus CrudRepository functions */
